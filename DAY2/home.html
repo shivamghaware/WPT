@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>About Page</title>
+</head>
+<Body>
+    <img height="100px" width="100px" src="Black Hole.jpg">
+    <hr>
+    <a href="home.html" target="_parent">Home </a> | 
+    <a href="https://google.com" target="_blank">Go To Google </a> | 
+    <a href="about.html" target="_self">About </a> | 
+    <a href="contact.html" target="_self">Contact </a> 
+    <br>
+    <hr>
+    <h1>Home Page</h1>
+    <hr>
+    <p>
+
+        <form action="server.jsp" method="post">
+        <br>
+        Name: <input name="name" type="text" placeholder="Enter Your Name" title="Name"/>
+
+        <br>
+        Age:<input name="age" type="number" min="18" max="100" placeholder="eg. 20"/>
+
+        <br>
+        Gender:
+        <input name="gender" type="radio" value="0"/>Male
+        <input name="gender" type="radio" value="1"/>Female
+        <input name="gender" type="radio" value="2"/>Other
+
+        <br>
+        Email:
+        <input name="email" type="email">
+
+        <br>
+        Country:
+        <select name="country">
+            <option value="1">India</option>
+            <option value="2">USA</option>
+            <option value="2">Germary</option>
+        </select>
+
+        Submit:<input type="submit">
+        </form>      
+    </p>
+
+</Body>
+</html>
