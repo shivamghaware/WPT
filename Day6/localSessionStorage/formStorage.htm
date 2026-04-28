@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    <center>
+        <h2>Form</h2>
+        <table border="1">
+            <tr>
+                <td>Name:</td>
+                <td><input id="name" type="text"/></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input id="addr" type="text"/></td>
+            </tr>
+            <tr>
+                <td id="submitrow" colspan="2">
+                    <input id="sbmtbtn" type="button" value="submit" onclick="addToStorage('name','addr')">
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
