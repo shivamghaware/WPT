@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLHTTP</title>
+</head>
+<body>
+    <input type="button" value="Click" onclick="getData()"/>
+
+    
+    <script>
+        var req;
+        function getData(){
+            debugger;
+            req=new XMLHttpRequest();
+            req.onreadystatechange=f;
+            req.open("GET","https://dummyjson.com/users");//1
+            req.send(); //2
+            //3
+            //4 on response
+        }
+
+        function f(){
+            if(req.readyState==4 && req.status==200){
+                var strresponse=req.responseText;
+                var resposeObj=JSON.parse(strresponse);
+                for(var i=0;i<resposeObj.users.length;i++){
+                    console.log(resposeObj.users[i].firstName);
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
