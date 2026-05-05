@@ -1,0 +1,8 @@
+{   
+    "myserver":"localhost",
+    "myport":3306,
+    "mydatabase":"day14",
+    "myusername":"root",
+    "mypassword":"shivam12345",
+    "jwtsecretkey":"123456789"
+}
