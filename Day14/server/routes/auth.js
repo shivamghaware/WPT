@@ -20,5 +20,4 @@ app.post("/",(req,res)=>{
         res.json({"error":"invalid credentials"});
     }
 })
-
 module.exports=app;

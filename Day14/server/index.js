@@ -9,6 +9,9 @@ const authRoute=require('./routes/auth');
 
 
 const app = express();
+
+
+//middleware
 app.use(cors());
 app.use(express.json());
 
@@ -38,6 +41,8 @@ app.use((req,res,next)=>{
 app.use("/signin",authRoute);
 app.use("/emp",employeesRoute);
 
+
+//server config
 const port = 9999;
 app.listen(port, () => {
     console.log(`server started at: http://127.0.0.1:${port}/emp`);
